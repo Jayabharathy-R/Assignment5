@@ -5,8 +5,8 @@ class uberPrice{
         this.baseRate;
         }
     getPrice(){
-        //console.log("hi")
-        if(this.type==hatchpack)
+            //console.log(" km is "+this.km)
+        if(this.type=="hatchpack")
         {
             this.baseRate=75;
             if(this.km<=4)
@@ -14,7 +14,7 @@ class uberPrice{
             else
             return (this.baseRate+(20*(this.km-4)));
         }
-        else if(this.type==sedan)
+        else if(this.type=="sedan")
         {
             this.baseRate=100;
             if(this.km<=4)
@@ -22,7 +22,7 @@ class uberPrice{
             else
             return (this.baseRate+(30*(this.km-4)));
         }
-       else if(this.type==suv)
+       else if(this.type=="suv")
         {
             this.baseRate=120;
             if(this.km<=4)
